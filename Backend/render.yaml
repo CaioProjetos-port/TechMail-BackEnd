@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: flask-backend
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app.py"
+    envVars:
+      - key: DB_HOST
+        value: <host do banco>
+      - key: DB_USER
+        value: <usuário>
+      - key: DB_PASS
+        value: <senha>
+      - key: DB_NAME
+        value: <nome_do_banco>
