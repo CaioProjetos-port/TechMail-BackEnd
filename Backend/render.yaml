@@ -6,10 +6,12 @@ services:
     startCommand: "python app.py"
     envVars:
       - key: DB_HOST
-        value: <host do banco>
+        value: mysql.railway.internal
+      - key: DB_PORT
+        value: 3306
       - key: DB_USER
-        value: <usuário>
+        value: root
       - key: DB_PASS
-        value: <senha>
+        value: FjyNwxKrZXCIfBcgfthIcqZcLINOlSKt
       - key: DB_NAME
-        value: <nome_do_banco>
+        value: railway
